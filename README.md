@@ -2,6 +2,12 @@
 
 A middleware plugin for FastAPI that automatically exposes JSON agent files as API endpoints.
 
+Why?
+Well, I could not make the serve to properly open API endpoints to be called by the frontend:
+* autogenstudio serve --team team.json --port 8084
+
+Loading one serve for each json, or having to always implement an endpoint for a new agent, this make it easier at least to integrate it faster with your frontend app.
+
 ## Installation
 
 You can install the package using pip:

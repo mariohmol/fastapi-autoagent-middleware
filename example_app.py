@@ -25,10 +25,10 @@ agent_middleware = AgentMiddleware(
     base_path="/agents",
     auto_reload=True,  # Set to True to reload agents on each request
     config_list=[
-        {
-            "model": "gpt-3.5-turbo",
-            "api_key": "your-openai-api-key"  # Replace with your actual API key
-        }
+       # {
+       #     "model": "gpt-3.5-turbo",
+      #      "api_key": "your-openai-api-key"  # Replace with your actual API key
+        #}
     ]
 )
 

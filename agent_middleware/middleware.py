@@ -108,29 +108,20 @@ class AgentMiddleware:
             if not agent:
                 raise HTTPException(status_code=404, detail=f"Agent '{agent_path}' not found")
             
-            # Create a user proxy agent for this chat
-            user_proxy = autogen.UserProxyAgent(
-                name="user",
-                human_input_mode="NEVER",
-                max_consecutive_auto_reply=1,
-                is_termination_msg=lambda x: True,
-                code_execution_config=False,
-            )
-            
-            # Initialize the chat
-            chat_response = user_proxy.initiate_chat(
-                agent,
-                message=chat_request.message,
-                context=chat_request.context
-            )
-            
-            # Extract the last message from the chat
-            last_message = chat_response[-1]["content"] if chat_response else "No response from agent"
-            
-            response = AgentResponse(
-                response=last_message,
-                context=chat_request.context
-            )
+            # Run the task using the team configuration
+            try:
+                result = await self.agent_manager.run_agent(
+                    agent_path=agent_path,
+                    task=chat_request.message
+                )
+                
+                response = AgentResponse(
+                    response=str(result),
+                    context=chat_request.context
+                )
+            except Exception as e:
+                logger.error(f"Error running agent {agent_path}: {str(e)}")
+                raise HTTPException(status_code=500, detail=str(e))
             
             self.hooks_manager.execute_hooks(
                 self.hooks_manager.after_hooks,
