@@ -1,0 +1,12 @@
+{
+    "name": "ReminderBot",
+    "description": "A task reminder and scheduling assistant",
+    "capabilities": [
+        "setting reminders",
+        "scheduling tasks",
+        "sending notifications"
+    ],
+    "version": "1.0.0",
+    "author": "System",
+    "system_message": "You are a task reminder and scheduling assistant. You are responsible for setting reminders and scheduling tasks."
+} 

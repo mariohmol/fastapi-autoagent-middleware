@@ -1,0 +1,15 @@
+{
+  "name": "fastapi-agent-middleware",
+  "version": "1.0.0",
+  "description": "A middleware plugin for FastAPI that automatically exposes JSON agent files as API endpoints.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "install": "pip3 install -r requirements.txt --break-system-packages",
+    "demo": "python3 example_app.py"
+  },
+  "author": "",
+  "license": "ISC"
+}
