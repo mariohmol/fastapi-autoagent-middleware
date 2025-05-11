@@ -1,5 +1,5 @@
 {
-  "name": "fastapi-agent-middleware",
+  "name": "fastapi-autoagent-middleware",
   "version": "1.0.0",
   "description": "A middleware plugin for FastAPI that automatically exposes JSON agent files as API endpoints.",
   "main": "index.js",

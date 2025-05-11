@@ -4,14 +4,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="fastapi-agent-middleware",
+    name="fastapi-autoagent-middleware",
     version="0.1.0",
     author="Your Name",
     author_email="your.email@example.com",
     description="A FastAPI middleware for exposing JSON agent files as API endpoints",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/fastapi-agent-middleware",
+    url="https://github.com/mariohmol/fastapi-autoagent-middleware",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -45,7 +45,7 @@ setup(
         ],
     },
     project_urls={
-        "Bug Reports": "https://github.com/yourusername/fastapi-agent-middleware/issues",
-        "Source": "https://github.com/yourusername/fastapi-agent-middleware",
+        "Bug Reports": "https://github.com/mariohmol/fastapi-autoagent-middleware/issues",
+        "Source": "https://github.com/mariohmol/fastapi-autoagent-middleware",
     },
 ) 

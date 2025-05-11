@@ -7,13 +7,13 @@ A middleware plugin for FastAPI that automatically exposes JSON agent files as A
 You can install the package using pip:
 
 ```bash
-pip install fastapi-agent-middleware
+pip install fastapi-autoagent-middleware
 ```
 
 Or install directly from the source:
 
 ```bash
-pip install git+https://github.com/mariohmol/fastapi-agent-middleware.git
+pip install git+https://github.com/mariohmol/fastapi-autoagent-middleware.git
 ```
 
 ## Features
@@ -111,8 +111,8 @@ To set up the development environment:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/fastapi-agent-middleware.git
-cd fastapi-agent-middleware
+git clone https://github.com/mariohmol/fastapi-autoagent-middleware.git
+cd fastapi-autoagent-middleware
 ```
 
 2. Install development dependencies:
