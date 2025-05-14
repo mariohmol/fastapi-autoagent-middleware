@@ -8,6 +8,15 @@ Well, I could not make the serve to properly open API endpoints to be called by 
 
 Loading one serve for each json, or having to always implement an endpoint for a new agent, this make it easier at least to integrate it faster with your frontend app.
 
+There are 2 tickets that if merged, will provide the same using AutoGen Studio
+
+* https://github.com/microsoft/autogen/pull/6520
+* https://github.com/microsoft/autogen/pull/6525
+
+An alternative project:
+* https://github.com/SongChiYoung/autogen-oaiapi
+
+
 ## Installation
 
 You can install the package using pip:
